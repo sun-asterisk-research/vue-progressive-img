@@ -1,5 +1,7 @@
 # vue-progressive-img
 
+** This is branch and documentation for vue 2. Visit the [main](https://github.com/sun-asterisk-research/vue-progressive-img/tree/legacy) branch for vue 3.**
+
 ![Peek 2021-11-23 00-06](https://user-images.githubusercontent.com/15942946/142904401-28c22329-2e7f-45f8-9655-307f0aef4be2.gif)
 
 Progressive Image Loading plugin for Vue 3
@@ -23,14 +25,16 @@ yarn add vue-progressive-img
 Initialize the plugin:
 
 ```diff
-  import { createApp } from 'vue'
+  import Vue from 'vue'
   import App from './App.vue'
 + import { ProgressiveImgPlugin } from 'vue-progressive-img'
 + import 'vue-progressive-img/src/styles.css'
 
-  const app = createApp(App)
-+ app.use(ProgressiveImgPlugin)
-  app.mount('#app')
++ Vue.use(ProgressiveImgPlugin)
+
+  new Vue({
+    render: function (h) { return h(App) }
+  }).$mount('#app')
 ```
 
 ## Usage
