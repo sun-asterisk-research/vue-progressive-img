@@ -1,5 +1,7 @@
 # vue-progressive-img
 
+** This is branch and documentation for vue 3.x version. Visit the [legacy](https://github.com/sun-asterisk-research/vue-progressive-img/tree/legacy) branch for vue 2.**
+
 ![Peek 2021-11-23 00-06](https://user-images.githubusercontent.com/15942946/142904401-28c22329-2e7f-45f8-9655-307f0aef4be2.gif)
 
 Progressive Image Loading plugin for Vue 3
