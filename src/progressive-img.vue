@@ -30,8 +30,6 @@
 </template>
 
 <script>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-
 export default {
   inheritAttrs: false,
 
