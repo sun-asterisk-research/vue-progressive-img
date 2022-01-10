@@ -59,9 +59,11 @@ export default {
   },
 
   data () {
-    shouldLoad: false,
-    isLoaded: false,
-    observer: null
+    return {
+      shouldLoad: false,
+      isLoaded: false,
+      observer: null
+    }
   },
 
   mounted () {
