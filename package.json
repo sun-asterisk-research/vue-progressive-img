@@ -1,6 +1,6 @@
 {
   "name": "@tranxuanthang/vue-progressive-img",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "main": "dist/vue-progressive-img-esm.js",
   "license": "MIT",
   "dependencies": {
