@@ -1,18 +1,22 @@
-import component from './progressive-img.vue'
 import directive from './directive.js'
+import component from './progressive-img.vue'
+import * as helper from './helper.js'
 import { createFilterElement } from './utils.js'
 
 const plugin = {
   install (Vue, options) {
-    Vue.component('progressive-img', component)
     Vue.directive('progressive-img', directive)
+    Vue.component('progressive-img', component)
 
-    createFilterElement()
+    if (typeof document !== 'undefined') {
+      createFilterElement()
+    }
   }
 }
 
 export {
-  component as ProgressiveImgComponent,
   directive as ProgressiveImgDirective,
-  plugin as ProgressiveImgPlugin
+  component as ProgressiveImgComponent,
+  plugin as ProgressiveImgPlugin,
+  helper as ProgressiveImgHelper
 }

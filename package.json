@@ -1,7 +1,16 @@
 {
   "name": "@tranxuanthang/vue-progressive-img",
   "version": "1.0.0-alpha.3",
-  "main": "index.js",
+  "main": "dist/vue-progressive-img-esm.js",
   "license": "MIT",
-  "main": "src/index.js"
+  "dependencies": {
+    "node-html-parser": "^5.2.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-vue": "^5.1",
+    "vue-template-compiler": "^2.6.14"
+  }
 }

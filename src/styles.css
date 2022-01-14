@@ -4,15 +4,15 @@
 }
 
 .progressive-img_wrapper {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .progressive-img_tiny {
   max-width: 100%;
-  max-height: 100%;
   object-fit: contain;
   transition: opacity .5s ease-in;
 }

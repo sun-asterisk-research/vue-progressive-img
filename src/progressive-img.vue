@@ -78,13 +78,13 @@ export default {
     const initIntersectionObserver = () => {
       if ('IntersectionObserver' in window) {
         this.observer = new IntersectionObserver(observerCallback)
-        this.observer.observe(this.$refs.pilElement.value)
+        this.observer.observe(this.$refs.pilElement)
       } else {
         this.shouldLoad = true
       }
     }
 
-    this.initIntersectionObserver()
+    initIntersectionObserver()
   },
 
   methods: {
