@@ -1,6 +1,6 @@
 import directive from './directive.js'
 import component from './progressive-img.vue'
-import * as helper from './helper.js'
+import { ProgressiveImgPrepare } from './helpers'
 import { createFilterElement } from './utils.js'
 
 const plugin = {
@@ -18,5 +18,5 @@ export {
   directive as ProgressiveImgDirective,
   component as ProgressiveImgComponent,
   plugin as ProgressiveImgPlugin,
-  helper as ProgressiveImgHelper
+  ProgressiveImgPrepare as ProgressiveImgPrepare
 }
